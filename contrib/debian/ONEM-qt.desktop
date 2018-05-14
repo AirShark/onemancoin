@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=ONEM
+Comment=ONEM P2P Cryptocurrency
+Comment[fr]=ONEM, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=ONEM, eşten eşe kriptografik sanal para birimi
+Exec=ONEM-qt %u
+Terminal=false
+Type=Application
+Icon=ONEM128
+MimeType=x-scheme-handler/ONEM;
+Categories=Office;Finance;

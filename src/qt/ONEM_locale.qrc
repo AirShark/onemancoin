@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/ONEM_bg.qm</file>
+        <file alias="de">locale/ONEM_de.qm</file>
+        <file alias="en">locale/ONEM_en.qm</file>
+        <file alias="es">locale/ONEM_es.qm</file>
+        <file alias="fi">locale/ONEM_fi.qm</file>
+        <file alias="fr">locale/ONEM_fr.qm</file>
+        <file alias="it">locale/ONEM_it.qm</file>
+        <file alias="ja">locale/ONEM_ja.qm</file>
+        <file alias="pl">locale/ONEM_pl.qm</file>
+        <file alias="pt">locale/ONEM_pt.qm</file>
+        <file alias="ru">locale/ONEM_ru.qm</file>
+        <file alias="sk">locale/ONEM_sk.qm</file>
+        <file alias="sv">locale/ONEM_sv.qm</file>
+        <file alias="vi">locale/ONEM_vi.qm</file>
+        <file alias="zh_CN">locale/ONEM_zh_CN.qm</file>
+        <file alias="zh_TW">locale/ONEM_zh_TW.qm</file>
+    </qresource>
+</RCC>
