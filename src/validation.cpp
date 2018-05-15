@@ -1238,10 +1238,15 @@ CAmount GetBlockSubsidy(int nPrevBits, int nHeight, const Consensus::Params& con
               return 1 * COIN;			// One Man Coin 
           else if (nHeight == 2)
               return 50000 * COIN;	// Masternode sale
+          /*if (nHeight >= 11833 && nHeight <= 13273)
+                  return 60 * COIN;  // 1440 block a day - next 24 hr
+          if (nHeight >= 13274 && nHeight <= 23354)
+                  return 12 * COIN;  // 10080 block a week - next 7 day*/
 
 
     // LogPrintf("height %u diff %4.2f reward %d\n", nPrevHeight, dDiff, nSubsidyBase);
       CAmount nSubsidy = 60 * COIN;
+      //CAmount nSubsidy = 6 * COIN;
 
       // Subsidy is cut in half every 865000 blocks which will occur approximately every 3 years.
     nSubsidy >>= halvings;

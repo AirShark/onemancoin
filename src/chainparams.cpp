@@ -98,7 +98,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nWindowSize = 4032;
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nThreshold = 3226; // 80% of 4032
 		consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000"); // 0
-        consensus.defaultAssumeValid = uint256S("0x000000000000000000000000000000000000000000000000"); // 0
+        consensus.defaultAssumeValid = uint256S("0x00000000086911bd12ccff54e6f82793f0d0c0a4fc2eb04c757bc6e33f7e1094"); // 0
         pchMessageStart[0] = 0xbd;
         pchMessageStart[1] = 0x6b;
         pchMessageStart[2] = 0x0c;
@@ -115,7 +115,7 @@ public:
         assert(consensus.hashGenesisBlock == uint256S("0x0000063bb7902a39a7fe9f349767fd233fa264ebdcdd9ffc7d70ab834678b6ba"));
         assert(genesis.hashMerkleRoot == uint256S("0xb85e6b744283fa6bf21d8c089a784b7375f5919fdf0ad0c046394b1c5265bbe5"));
 
-        vSeeds.push_back(CDNSSeedData("omc.space", "seeds.omc.space"));
+        vSeeds.push_back(CDNSSeedData("185.204.3.29", "185.204.3.29"));
 		
 		// Onemancoin addresses start with 			'o'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,115);
