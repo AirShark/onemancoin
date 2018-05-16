@@ -56,10 +56,10 @@ class CMainParams : public CChainParams {
 public:
     CMainParams() {
         strNetworkID = "main";
-        consensus.nSubsidyHalvingInterval = 865000; 
+        consensus.nSubsidyHalvingInterval = 1051200; //every 2 year
         consensus.nMasternodePaymentsStartBlock = 100; 
         consensus.nMasternodePaymentsIncreaseBlock = 150; 
-        consensus.nMasternodePaymentsIncreasePeriod = 720*7; 
+        consensus.nMasternodePaymentsIncreasePeriod = 1440*365; // after 1 year
         consensus.nInstantSendKeepLock = 24;
         consensus.nBudgetPaymentsStartBlock = 328008; // actual historical value
         consensus.nBudgetPaymentsCycleBlocks = 22736; // ~(60*24*30)/1.9
