@@ -1245,7 +1245,7 @@ CAmount GetBlockSubsidy(int nPrevBits, int nHeight, const Consensus::Params& con
 
 
     // LogPrintf("height %u diff %4.2f reward %d\n", nPrevHeight, dDiff, nSubsidyBase);
-      CAmount nSubsidy = 60 * COIN;
+    //  CAmount nSubsidy = 60 * COIN;
 
       // Subsidy is cut in half every 865000 blocks which will occur approximately every 3 years.
     nSubsidy >>= halvings;
