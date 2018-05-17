@@ -97,8 +97,8 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nTimeout = 1539561600; // 15/Oct/2018
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nWindowSize = 4032;
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nThreshold = 3226; // 80% of 4032
-		consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000"); // 0
-        consensus.defaultAssumeValid = uint256S("0x00000000086911bd12ccff54e6f82793f0d0c0a4fc2eb04c757bc6e33f7e1094"); // 0
+		consensus.nMinimumChainWork = uint256S("0x00"); // 0
+        consensus.defaultAssumeValid = uint256S("0x00"); // 0
         pchMessageStart[0] = 0xbd;
         pchMessageStart[1] = 0x6b;
         pchMessageStart[2] = 0x0c;

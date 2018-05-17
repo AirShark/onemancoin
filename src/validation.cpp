@@ -1239,16 +1239,19 @@ CAmount GetBlockSubsidy(int nPrevBits, int nHeight, const Consensus::Params& con
           else if (nHeight == 2)
               return 50000 * COIN;	// Masternode sale
           if (nHeight >= 3 && nHeight <= 14999)
-                 CAmount nSubsidy = 60 * COIN;  // Old rewards
+              //CAmount nSubsidy = 60 * COIN;  // Old rewards
+              return 60 * COIN;
           if (nHeight >= 15000)
-                  CAmount nSubsidy = 6 * COIN;  // New rewards
+              //CAmount nSubsidy = 6 * COIN;  // New rewards
+              return 6 * COIN;
 
 
     // LogPrintf("height %u diff %4.2f reward %d\n", nPrevHeight, dDiff, nSubsidyBase);
-    //  CAmount nSubsidy = 60 * COIN;
+    CAmount nSubsidy = 60 * COIN;
 
-      // Subsidy is cut in half every 865000 blocks which will occur approximately every 3 years.
+      // Subsidy is cut in half every 1051200 blocks which will occur approximately every 2 years.
     nSubsidy >>= halvings;
+    //return nSubsidy;
 
     // Hard fork to reduce the block reward by 10 extra percent (allowing budget/superblocks)
     CAmount nSuperblockPart = (nHeight > consensusParams.nBudgetPaymentsStartBlock) ? nSubsidy/10 : 0;
@@ -1267,8 +1270,8 @@ CAmount GetMasternodePayment(int nHeight, CAmount blockValue)
     //if(nHeight > nMNPIBlock+(nMNPIPeriod* 4)) ret = blockValue/2;     // 50:50 after one month
 
     if(nHeight > nMNPIBlock)                  ret = ret;              // 90:10 start after block 100
-    if(nHeight > 14999) ret =  blockValue/3;                   // 6/3=2 coins for MNs
-    if(nHeight > nMNPIBlock+(nMNPIPeriod)) ret = blockValue/2;     // 50:50 after one year
+    if(nHeight > 14999)                       ret = blockValue/3;    // 6/3=2 coins for MNs
+    if(nHeight > nMNPIBlock+(nMNPIPeriod))    ret = blockValue/2;     // 50:50 after one year
 
     return ret;
 }
